@@ -1,0 +1,84 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* リセット ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+// 共通レイアウト
+html{
+  color:#333;
+}
+
+main{
+  margin:25px;
+  width:1250px;
+}
+
+h1{
+  font-size:26px;
+}
+
+.top{
+  margin-bottom:20px;
+}
+
+.toptext p{
+  font-size:13px;
+  margin-bottom:30px;
+  margin-left:40px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+table{
+  width:1000px;
+  font-size:13px;
+}
+
+.table_body{
+  width:400px;
+}
+
+.label{
+  font-size:13px;
+}
+
+form,input,textarea{
+  display:block;
+  margin-bottom:10px;
+}
+
+a:hover {
+background-color :#000; /*背景色*/
+color:#fff;
+}
+
+.flash-message{
+  font-size:13px;
+  color:#40BA8D;
+}
