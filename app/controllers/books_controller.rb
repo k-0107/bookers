@@ -1,9 +1,5 @@
 class BooksController < ApplicationController
-  
-  def top
-    
-  end
-  
+
   def index
     @books = Book.all
     @book = Book.new
@@ -46,7 +42,6 @@ class BooksController < ApplicationController
   end
 
    private
-  # ストロングパラメータ
   def book_params
     params.require(:book).permit(:title,:body)
   end
