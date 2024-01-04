@@ -12,7 +12,7 @@
         <td>
           <%=link_to("Show",book_path(book.id))%>
           <%=link_to("Edit",edit_book_path(book.id))%>
-          <%= link_to("Destroy", destroy_book_path(book.id), method: :delete, data: { confirm: "Are you sure?" }) %>
+          <%= link_to("Destroy", book_path(book.id), method: :delete, data: { confirm: "Are you sure?" }) %>
         </td>
       </tr>
       <% end %>
@@ -22,11 +22,12 @@
   <h3>New book</h3>
   <% @book.errors.full_messages.each do |message| %>
     <div class="form-error">
+      <p>error</p>
       <%= message %>
     </div>
   <% end %>
   <div class="form">
-    <%= form_with model: @book, url: '/books/create', method: :post do |f| %>
+    <%= form_with model: @book, url: '/books', method: :post do |f| %>
       <p class="label">title</p>
       <%= f.text_field :title %>
     	
