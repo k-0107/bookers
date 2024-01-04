@@ -4,14 +4,14 @@
       <%= message %>
     </div>
   <% end %>
-  <%= form_with model: @book, url: "/books/#{@book.id}/update", method: :post do |f| %>
+  <%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
     <h4>title</h4>
     <%= f.text_field :title %>
-  	
+
     <h4>body</h4>
     <%= f.text_area :body %>
-  	
+
     <%= f.submit 'Update Book' %>
   <% end %>
-  
-  <%=link_to("Show","/books/#{@book.id}/")%><span> | </span><%=link_to("Back","/books")%>
+
+  <%=link_to("Show",book_path(@book.id))%><span> | </span><%=link_to("Back","/books")%>
